@@ -1,0 +1,153 @@
+.bring {
+    margin-top: 150px;
+    @include d-flex(column, space-between, center, 0, 40px);
+    padding: 0 100px;
+
+    &__title {
+        color: red;
+        @include h-property(60px, 60px, 700);
+        text-align: center;
+    }
+
+    input {
+        padding: 18px 40px;
+        background-color: #000;
+        color: #fff;
+        @include h-property(20px, 14px, 400);
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+            transition: 0.2s;
+        }
+    }
+}
+
+.car {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__first {
+        margin-top: 100px;
+        background-image: url(/img/section/car1.webp);
+    }
+
+    &__second {
+        background-image: url(/img/section/car2.webp);
+    }
+}
+
+.about {
+    margin-top: 100px;
+    @include d-flex(column, space-between, center);
+    text-align: center;
+
+    &__title {
+        color: red;
+        @include h-property(40px);
+    }
+
+    p {
+        @include h-property(20px);
+    }
+
+    &__contain {
+        width: 100%;
+        height: 400px;
+        background-color: #000;
+    }
+}
+
+.list {
+    text-align: center;
+    margin-top: 100px;
+    background-color: red;
+    padding: 100px 0;
+
+    &__container {
+        @include d-flex(column, space-between, center, 0, 50px);
+
+        a {
+            color: #fff;
+            @include h-property(40px, 20px, 700)
+        }
+    }
+}
+
+.project{
+    margin-top: 100px;
+    text-align: center;
+    @include d-flex(column, space-between, center, 0, 30px);
+    &__title{
+        color: red;
+        @include h-property(40px);
+    }
+    p{
+        @include h-property(23px);
+    }
+}
+
+.allproject{
+    @include d-flex(column, space-between, center, 0, 50px);
+    &__img{
+        margin-top: 100px;
+        @include d-flex(row, space-between, center, 0, 50px);
+        img{
+            width: 30%;
+        }
+    }
+    input {
+        padding: 18px 40px;
+        background-color: #000;
+        color: #fff;
+        @include h-property(20px, 14px, 400);
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+            transition: 0.2s;
+        }
+    }
+}
+
+.constant{
+    margin-top: 100px;
+    background-color: red;
+    padding: 100px 0;
+    color:#fff;
+    &__contain{
+        @include d-flex(column, space-between);
+    }
+    &__title{
+        @include h-property(60px, 70px, 400);
+    }
+}
+
+.contact{
+    padding: 100px 0;
+    background-color: black;
+    @include d-flex(column, space-between, center, 0, 100px);
+    color: #fff;
+    &__contain{
+        @include d-flex(column, space-between, center, 0, 100px);
+    }
+    &__title{
+        @include h-property(50px, 20px, 500);
+    }
+    input {
+        padding: 18px 40px;
+        background-color: red;
+        color: #fff;
+        @include h-property(20px, 14px, 400);
+        cursor: pointer;
+        border: none;
+        &:hover {
+            opacity: 0.9;
+            transition: 0.2s;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.header {
+    backdrop-filter: blur(10px);
+    background-color: #ffffff;
+    position: fixed;
+    padding: 10px 190px;
+    top: 0;
+    width: 100%;
+    img{
+        display: none;
+    }
+    &__title {
+        cursor: pointer;
+    }
+
+    &__container {
+        @include d-flex(row, space-between, center);
+    }
+
+    a {
+        @include h-property(18px, 20px, 500);
+        color: #000;
+
+        &:hover {
+            border-bottom: 2px solid black;
+        }
+    }
+
+    &__list {
+        @include d-flex();
+    }
+}

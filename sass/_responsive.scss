@@ -1,0 +1,86 @@
+@media only screen and (max-width: 1199px){
+    .container{
+        max-width: 900px;
+    }
+    .header{
+        padding: 10px;
+    }
+    .bring{
+        &__title{
+            @include h-property(40px, 60px, 700);
+        }
+    }
+    .constant{
+        &__title{
+            @include h-property(40px, 60px, 400);
+        }
+    }
+    .contact{
+        &__title{
+            @include h-property(30px, 20px, 500);
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .container{
+        max-width: 700px;
+    }
+    .header{
+        img{
+            display: block;
+            cursor: pointer;
+        }
+        &__list{
+            display: none;
+        }
+    }
+    .bring{
+        &__title{
+            @include h-property(40px, 40px, 700);
+        }
+    }
+    .about{
+        &__contain {
+            height: 200px;
+        }
+    }
+    .list{
+        a{
+            @include h-property(30px, 20px, 500)
+        }
+    }
+    .car{
+        height: 300px;
+
+    }
+    .allproject{
+        margin-top: 50px;
+        @include d-flex(column-reverse, space-between, center, 0, 50px);
+        &__img{
+            @include d-flex(column);
+        }
+        img{
+            width: 90%;
+        }
+    }
+    .footer{
+        @include d-flex(row, center, center, 0, 90px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container{
+        max-width: 600px;
+    }
+    .contact{
+        gap: 40px;
+        padding: 30px 0;
+        &__contain{
+        gap: 20px;
+        }
+        &__title{
+            @include h-property(30px, 40px, 400);
+        }
+    }
+}

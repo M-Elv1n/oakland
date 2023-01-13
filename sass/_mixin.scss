@@ -1,0 +1,15 @@
+@mixin d-flex ($direction: row, $justify-content:flex-start, $align-items:flex-start, $flex-wrap:nowrap, $gap: 20px) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $direction;
+    flex-wrap: $flex-wrap;
+    gap: $gap;
+}
+
+@mixin h-property($font-size: 14px, $line-height: 24px, $font-weight: 400) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: 0.2px;
+}

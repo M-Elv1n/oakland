@@ -1,0 +1,6 @@
+.footer{
+    @include d-flex(row, center, center, 0, 50px);
+    img{
+        cursor: pointer;
+    }
+}
